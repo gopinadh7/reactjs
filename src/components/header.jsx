@@ -8,10 +8,12 @@ const Header = props => {
           fontSize: 40,
           fontFamily: "Italique gras",
           color: "3FFFFF",
-          backgroundColor: "black"
+          backgroundColor: "cyan"
         }}
       >
-<font color="white">E-Commerce</font></h1>
+        E-Commerce
+      </h1>
+      <p align="right">{props.date}</p>
     </React.Fragment>
   );
 };

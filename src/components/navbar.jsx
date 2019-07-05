@@ -1,15 +1,18 @@
-import React from "react";
+import React, {Component } from 'react';
 
-const navbar = ({ totalCount }) => {
-  return (
-    <>
-      <nav className="navbar navbar-light bg-danger">
+class navbar extends Component {
+    state = {  }
+    render() { 
+        return (
+            <>
+      <nav className="navbar  navbar-expand-md navbar-dark bg-dark ">
         <a className="navbar-brand" href="http://localhost:3000">
-        <img src={require("../data/images.jpeg")} width={60} alt="" />
-          MyShop
+          E-Commerce {this.props.totalcount}
         </a>
       </nav>
     </>
-  );
-};
+          );
+    }
+}
+ 
 export default navbar;
